@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Aplikacja Taco Cloud</title>
+</head>
+
+<body>
+<h1>Rejestrowanie</h1>
+<img th:src="@{/images/TacoCloud.png}"/>
+
+<form method="POST" th:action="@{/register}" id="registerForm">
+
+    <label>Nazwa użytkownika: <input type="text" name="username"/><br/>
+    </label>
+
+    <label>Hasło: <input type="password" name="password"/><br/>
+    </label>
+
+    <label>Potwierdź hasło: <input type="password" name="confirm"/><br/>
+    </label>
+
+    <label>Pełne imię i nazwisko: <input type="text" name="fullname"/><br/>
+    </label>
+
+    <label>Ulica: <input type="text" name="street"/><br/>
+    </label>
+
+    <label>Miejscowość: <input type="text" name="city"/><br/>
+    </label>
+
+    <label>Województwo: <input type="text" name="state"/><br/>
+    </label>
+
+    <label>Kod pocztowy: <input type="text" name="zip"/><br/>
+    </label>
+
+    <label>Telefon: <input type="text" name="phone"/><br/>
+    </label>
+
+    <input type="submit" value="Zarejestruj"/>
+</form>
+
+</body>
+</html>

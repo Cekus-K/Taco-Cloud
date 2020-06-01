@@ -6,6 +6,7 @@
     <link rel="stylesheet" th:href="@{/styles.css}" />
 </head>
 <body>
+    <!--/*@thymesVar id="order" type="pl.cekus.tacocloud.web.OrderController"*/-->
     <form method="POST" th:action="@{/orders}" th:object="${order}">
         <h1>Zamów przygotowane taco!</h1>
 
