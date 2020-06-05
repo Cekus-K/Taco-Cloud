@@ -28,6 +28,9 @@ public class Order implements Serializable {
 
     private Date placedAt;
 
+    @ManyToOne
+    private User user;
+
     @NotBlank(message = "Podanie imienia i nazwiska jest obowiązkowe")
     private String deliveryName;
 
@@ -55,9 +58,6 @@ public class Order implements Serializable {
 
     @ManyToMany(targetEntity = Taco.class)
     private List<Taco> tacos = new ArrayList<>();
-
-    @ManyToOne
-    private User user;
 
     public void addDesign(Taco design) {
         this.tacos.add(design);

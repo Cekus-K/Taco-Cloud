@@ -8,11 +8,11 @@ import pl.cekus.tacocloud.User;
 import pl.cekus.tacocloud.data.UserRepository;
 
 @Service
-class UserRepositoryUserDetailsService implements UserDetailsService {
+public class UserRepositoryUserDetailsService implements UserDetailsService {
 
-    private final UserRepository userRepo;
+    private UserRepository userRepo;
 
-    UserRepositoryUserDetailsService(UserRepository userRepo) {
+    public UserRepositoryUserDetailsService(UserRepository userRepo) {
         this.userRepo = userRepo;
     }
 

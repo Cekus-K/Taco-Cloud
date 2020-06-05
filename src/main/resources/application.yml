@@ -1,0 +1,16 @@
+taco:
+  orders:
+    pageSize: 10
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_in_action
+    username: root
+
+  jpa:
+    hibernate.ddl-auto: create
+    show-sql: true
+
+  data:
+    rest:
+      base-path: /api
